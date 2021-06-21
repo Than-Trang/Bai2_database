@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="5dp">
+
+
+    <EditText
+        android:id="@+id/ten_kh"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="ten_khach"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/sdt_khach"
+        android:layout_width="280dp"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="sdt_khach"
+        android:textSize="20dp"
+        android:layout_below="@+id/ten_kh"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/ư_tien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ưu tiên"
+        android:textColor="#222"
+        android:layout_below="@+id/sdt_khach"
+        android:layout_marginTop="15dp"
+        android:paddingRight="160dp"
+        android:textSize="20dp"
+        />
+    <RadioGroup
+        android:id="@+id/rdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ư_tien"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/sdt_khach">
+        <RadioButton
+            android:id="@+id/nguoi_gia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Người già"
+            android:textSize="20dp"
+            />
+        <RadioButton
+            android:id="@+id/tre_nho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trẻ nhỏ"
+            android:textSize="20dp"
+            />
+        <RadioButton
+            android:id="@+id/co"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Có"
+            android:textSize="20dp"
+            />
+
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/dich_vu_them"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dịch vụ thêm"
+        android:textColor="#222"
+        android:layout_below="@+id/rdo"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:layout_alignRight="@+id/ư_tien"
+        android:layout_alignLeft="@+id/ư_tien"
+        />
+    <CheckBox
+        android:id="@+id/an_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dich_vu_them"
+        android:layout_below="@+id/rdo"
+        android:text="Ăn cơm"
+        android:textSize="20dp"
+        />
+    <CheckBox
+        android:id="@+id/dieu_hoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dich_vu_them"
+        android:layout_below="@+id/an_com"
+        android:text="Điều hòa"
+        android:textSize="20dp"
+
+        />
+    <CheckBox
+        android:id="@+id/nong_lanh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dich_vu_them"
+        android:layout_below="@+id/dieu_hoa"
+        android:text="Nóng lạnh"
+        android:textSize="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Them"
+        android:id="@+id/btn_Them"
+        android:layout_below="@id/nong_lanh"
+        android:layout_marginTop="100dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xem"
+        android:id="@+id/btn_Xem"
+        android:layout_below="@id/nong_lanh"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xóa"
+        android:id="@+id/btn_Xoa"
+        android:layout_below="@id/nong_lanh"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
